@@ -1,0 +1,65 @@
+We use codepen.io as a playgroud for real apps we will be using local setup 
+In code pen we can create a new pen.
+
+First we will write an application with HTML, CSS and JS and then how can we use react to 
+reuse those
+
+HTML:
+<div class="person">
+  <h1>Max</h1>
+  <p>Your age is 28</p>
+</div>
+
+<div class="person">
+  <h1>Abhinav</h1>
+  <p>Your age is 25</p>
+</div>
+
+CSS:
+.person
+{
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  width: 200px;
+  padding: 20px;
+}
+
+If we see the person div it always has the same data and hence we can use it as a component.
+We need to add to React and ReactDom to our codepen.
+React is the logic for creating components.
+ReactDOM is for rendering these components as real DOM.
+React uses special nex gen javascript features.
+We use Babel to ship code such that they work with all browser
+// Most basic form of React Component is a function we are going to learn more forms later in the course
+
+This function is a normal function and it has to return the code we want to render to DOM.
+Here the JS uses a special syntax called JSX.
+With the help of JSX we can write HTML inside Javascript
+JSX is syntactical sugar to normal JavaScript code.
+
+
+To convert a normal function to a react component
+React library we imported is responsible for correctly rendering JSX. The other package 
+ReactDom we imported exposes a object ReactDOM which has a method render(). This method allows
+us to render a normal javascript function as a component, and react takes care of component 
+part.
+
+We can then render the function but not by referencing the function but instead turning it into HTML element. Using JSX syntax understood by React. We write it as custom HTML element.
+ 
+We cannot use class word inside an HTML element is a JSX as in javascript class is a reserved
+keyword.
+
+The great thing about React is that we can dynamically configure them as we need them.
+
+React automatically gives a parameter to component we create and the props contain all the 
+attributes we add to the custom HTML.
+
+By using this we can create n number of custom HTML tags and those will be rendered according to the dynamic values of the attributes.
+
+We can even add logics like click listener, events and many more once we start building complex application.
+
+Then we have small components that have their logic.
+
+JSX has the requirement of having only one root element, there are ways around this limitation though.
